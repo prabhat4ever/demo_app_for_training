@@ -83,6 +83,6 @@ class PostsController < ApplicationController
 
   def recent_comments
     @post = Post.find(params[:id])
-    @comments = @post.comments.last(5)
+    @comments = @post.comments.latest_comments
   end
 end
