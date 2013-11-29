@@ -1,0 +1,1536 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-11-29 09:03:01 +0530
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (9ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2013-11-29 09:03:03 +0530
+Processing by Rails::InfoController#properties as */*
+  Rendered inline template (1.9ms)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (225.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (378.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePosts (20131129033719)
+  [1m[35m (190.0ms)[0m  CREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (65.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131129033719')[0m
+  [1m[35m (0.8ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-11-29 09:44:48 +0530
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2013-11-29 09:44:51 +0530
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Processing by Rails::InfoController#properties as */*
+  Rendered inline template (12.8ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-11-29 09:44:56 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` 
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Compiled posts.css  (5ms)  (pid 9396)
+Compiled scaffolds.css  (22ms)  (pid 9396)
+Compiled application.css  (37ms)  (pid 9396)
+Compiled jquery.js  (1ms)  (pid 9396)
+Compiled jquery_ujs.js  (0ms)  (pid 9396)
+Compiled posts.js  (358ms)  (pid 9396)
+Compiled application.js  (394ms)  (pid 9396)
+Completed 200 OK in 826ms (Views: 487.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 09:44:57 +0530
+Served asset /application.css - 200 OK (9ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 09:44:57 +0530
+Served asset /posts.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 09:44:57 +0530
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 09:44:57 +0530
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 09:44:57 +0530
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 09:44:57 +0530
+Served asset /posts.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 09:44:57 +0530
+Served asset /application.js - 200 OK (7ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-11-29 09:45:37 +0530
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-11-29 09:45:39 +0530
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-29 09:46:20 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` [0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 65ms (Views: 34.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 09:46:20 +0530
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 09:46:20 +0530
+Served asset /posts.css - 200 OK (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 09:46:20 +0530
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 09:46:20 +0530
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 09:46:20 +0530
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 09:46:20 +0530
+Served asset /posts.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 09:46:20 +0530
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-11-29 09:46:45 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (6.6ms)
+  Rendered posts/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-11-29 09:47:15 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SWBIAJ4uKQZubM1fKifDQsYVKV1oD1ZQH4VSuFBCHm8=", "post"=>{"title"=>"Hello World", "content"=>"Hello World,\r\nThis is my first blog :-)"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO `posts` (`content`, `created_at`, `title`, `updated_at`) VALUES ('Hello World,\r\nThis is my first blog :-)', '2013-11-29 04:17:15', 'Hello World', '2013-11-29 04:17:15')[0m
+  [1m[35m (74.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 354ms (ActiveRecord: 76.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2013-11-29 09:47:15 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  Rendered posts/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-11-29 09:49:01 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT `posts`.* FROM `posts` 
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-11-29 09:49:05 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.7ms)
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-11-29 09:50:14 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` [0m
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 09:50:14 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 09:50:14 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 09:50:14 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePosts (20131129033719)
+Migrating to CreateComments (20131129042333)
+  [1m[35m (167.1ms)[0m  CREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_name` varchar(255), `content` text, `post_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (87.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131129042333')[0m
+  [1m[35m (0.5ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/comments" for 127.0.0.1 at 2013-11-29 09:56:56 +0530
+Connecting to database specified by database.yml
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` [0m
+  Rendered comments/index.html.erb within layouts/application (2.0ms)
+Compiled comments.css  (4ms)  (pid 10137)
+Compiled application.css  (22ms)  (pid 10137)
+Compiled comments.js  (111ms)  (pid 10137)
+Compiled application.js  (119ms)  (pid 10137)
+Completed 200 OK in 347ms (Views: 319.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 09:56:56 +0530
+Served asset /comments.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 09:56:56 +0530
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 09:56:56 +0530
+Served asset /comments.js - 200 OK (2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 09:56:56 +0530
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 09:56:56 +0530
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 09:56:56 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 09:56:56 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 09:56:56 +0530
+Served asset /posts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 09:56:56 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2013-11-29 09:56:59 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (6.1ms)
+  Rendered comments/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 35ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 09:56:59 +0530
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 09:56:59 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 09:56:59 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 09:56:59 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 09:56:59 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 09:56:59 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 09:56:59 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2013-11-29 09:57:23 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (1.9ms)
+  Rendered comments/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 09:57:23 +0530
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 09:57:23 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 09:57:23 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 09:57:23 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 09:57:23 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 09:57:23 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 09:57:23 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 09:57:23 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 09:57:23 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2013-11-29 09:58:41 +0530
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/comments"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/acer/.rvm/rubies/ruby-1.9.3-rc1/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/acer/.rvm/rubies/ruby-1.9.3-rc1/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/acer/.rvm/rubies/ruby-1.9.3-rc1/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2013-11-29 10:01:44 +0530
+
+ActionController::RoutingError (No route matches [GET] "/comments"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/acer/.rvm/rubies/ruby-1.9.3-rc1/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/acer/.rvm/rubies/ruby-1.9.3-rc1/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/acer/.rvm/rubies/ruby-1.9.3-rc1/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-29 10:01:51 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` [0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 74ms (Views: 37.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 10:01:51 +0530
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:01:51 +0530
+Served asset /comments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 10:01:51 +0530
+Served asset /posts.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 10:01:51 +0530
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 10:01:51 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 10:01:51 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:01:51 +0530
+Served asset /comments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 10:01:51 +0530
+Served asset /posts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 10:01:51 +0530
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2013-11-29 10:01:55 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 10:01:55 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 10:01:55 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:01:55 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 10:01:55 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 10:01:55 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 10:01:55 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:01:55 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 10:01:55 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 10:01:55 +0530
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/posts/1/comments/new" for 127.0.0.1 at 2013-11-29 10:01:59 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"post_id"=>"1"}
+  Rendered comments/_form.html.erb (19.8ms)
+  Rendered comments/new.html.erb within layouts/application (39.0ms)
+Completed 500 Internal Server Error in 49ms
+
+ActionView::Template::Error (undefined method `comments_path' for #<#<Class:0xb402c22c>:0xb402acb0>):
+    1: <%= form_for(@comment) do |f| %>
+    2:   <% if @comment.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+  app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb__324679915__625668988'
+  app/views/comments/new.html.erb:3:in `_app_views_comments_new_html_erb__137300853__637397348'
+  app/controllers/comments_controller.rb:29:in `new'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/posts/1/comments/new" for 127.0.0.1 at 2013-11-29 10:05:26 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  Rendered comments/_form.html.erb (4.9ms)
+  Rendered comments/new.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 87ms
+
+ActionView::Template::Error (undefined method `comments_path' for #<#<Class:0xb52af6c4>:0xb5069be4>):
+    1: <%= form_for(@comment) do |f| %>
+    2:   <% if @comment.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+  app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb__324679915__625668988'
+  app/views/comments/new.html.erb:3:in `_app_views_comments_new_html_erb__137300853__637397348'
+  app/controllers/comments_controller.rb:31:in `new'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started GET "/posts/1/comments/new" for 127.0.0.1 at 2013-11-29 10:05:51 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered comments/_form.html.erb (5.3ms)
+  Rendered comments/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined method `comments_path' for #<#<Class:0xb5fe1bd0>:0xb4d269c8>):
+    1: <%= form_for(@comment) do |f| %>
+    2:   <% if @comment.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+  app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb__324679915__625668988'
+  app/views/comments/new.html.erb:3:in `_app_views_comments_new_html_erb__137300853__637397348'
+  app/controllers/comments_controller.rb:32:in `new'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.0ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.5ms)
+
+
+Started GET "/posts/1/comments/new" for 127.0.0.1 at 2013-11-29 10:06:46 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  Rendered comments/_form.html.erb (4.6ms)
+  Rendered comments/new.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `comments_path' for #<#<Class:0xb5fe1bd0>:0xb52be19c>):
+    1: <%= form_for(@comment) do |f| %>
+    2:   <% if @comment.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+  app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb__324679915__625668988'
+  app/views/comments/new.html.erb:3:in `_app_views_comments_new_html_erb__137300853__627710648'
+  app/controllers/comments_controller.rb:32:in `new'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.5ms)
+
+
+Started GET "/posts/1/comments/new" for 127.0.0.1 at 2013-11-29 10:08:53 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered comments/_form.html.erb (6.2ms)
+  Rendered comments/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 10:08:53 +0530
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:08:53 +0530
+Served asset /comments.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 10:08:53 +0530
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 10:08:53 +0530
+Served asset /posts.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 10:08:53 +0530
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 10:08:53 +0530
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:08:53 +0530
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 10:08:53 +0530
+Served asset /posts.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 10:08:53 +0530
+Served asset /application.js - 200 OK (2ms)
+
+
+Started POST "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:09:59 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SWBIAJ4uKQZubM1fKifDQsYVKV1oD1ZQH4VSuFBCHm8=", "comment"=>{"user_name"=>"Amit", "content"=>"Nice post", "post_id"=>"1"}, "commit"=>"Create Comment", "post_id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `comments` (`content`, `created_at`, `post_id`, `updated_at`, `user_name`) VALUES ('Nice post', '2013-11-29 04:39:59', 1, '2013-11-29 04:39:59', 'Amit')[0m
+  [1m[35m (127.3ms)[0m  COMMIT
+Redirected to 
+Completed 500 Internal Server Error in 159ms
+
+NoMethodError (undefined method `comment_url' for #<CommentsController:0xb654cea8>):
+  app/controllers/comments_controller.rb:50:in `block (2 levels) in create'
+  app/controllers/comments_controller.rb:48:in `create'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started POST "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:10:51 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SWBIAJ4uKQZubM1fKifDQsYVKV1oD1ZQH4VSuFBCHm8=", "comment"=>{"user_name"=>"Amit", "content"=>"Nice post", "post_id"=>"1"}, "commit"=>"Create Comment", "post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `comments` (`content`, `created_at`, `post_id`, `updated_at`, `user_name`) VALUES ('Nice post', '2013-11-29 04:40:51', 1, '2013-11-29 04:40:51', 'Amit')[0m
+  [1m[35m (94.8ms)[0m  COMMIT
+Completed 500 Internal Server Error in 127ms
+
+NoMethodError (undefined method `post_comments' for #<CommentsController:0xb67eba24>):
+  app/controllers/comments_controller.rb:50:in `block (2 levels) in create'
+  app/controllers/comments_controller.rb:48:in `create'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started POST "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:11:01 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SWBIAJ4uKQZubM1fKifDQsYVKV1oD1ZQH4VSuFBCHm8=", "comment"=>{"user_name"=>"Amit", "content"=>"Nice post", "post_id"=>"1"}, "commit"=>"Create Comment", "post_id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `comments` (`content`, `created_at`, `post_id`, `updated_at`, `user_name`) VALUES ('Nice post', '2013-11-29 04:41:01', 1, '2013-11-29 04:41:01', 'Amit')[0m
+  [1m[35m (74.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/1/comments
+Completed 302 Found in 119ms (ActiveRecord: 79.4ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:11:01 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.6ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `comment_path' for #<#<Class:0xa899068>:0xa89565c>):
+    15:     <td><%= comment.user_name %></td>
+    16:     <td><%= comment.content %></td>
+    17:     <td><%= comment.post_id %></td>
+    18:     <td><%= link_to 'Show', comment %></td>
+    19:     <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
+    20:     <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    21:   </tr>
+  app/views/comments/index.html.erb:18:in `block in _app_views_comments_index_html_erb__507807821_88382530'
+  app/views/comments/index.html.erb:13:in `each'
+  app/views/comments/index.html.erb:13:in `_app_views_comments_index_html_erb__507807821_88382530'
+  app/controllers/comments_controller.rb:9:in `index'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:12:49 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"comments", :post_id=>#<Post id: 1, title: "Hello World", content: "Hello World,\r\nThis is my first blog :-)", created_at: "2013-11-29 04:17:15", updated_at: "2013-11-29 04:17:15">}):
+  app/views/comments/index.html.erb:18:in `block in _app_views_comments_index_html_erb__507807821__616603248'
+  app/views/comments/index.html.erb:13:in `each'
+  app/views/comments/index.html.erb:13:in `_app_views_comments_index_html_erb__507807821__616603248'
+  app/controllers/comments_controller.rb:9:in `index'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:13:34 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"comments", :post_id=>1}):
+  app/views/comments/index.html.erb:18:in `block in _app_views_comments_index_html_erb__507807821__621181468'
+  app/views/comments/index.html.erb:13:in `each'
+  app/views/comments/index.html.erb:13:in `_app_views_comments_index_html_erb__507807821__621181468'
+  app/controllers/comments_controller.rb:9:in `index'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:13:57 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"comments", :post_id=>#<Post id: 1, title: "Hello World", content: "Hello World,\r\nThis is my first blog :-)", created_at: "2013-11-29 04:17:15", updated_at: "2013-11-29 04:17:15">}):
+  app/views/comments/index.html.erb:18:in `block in _app_views_comments_index_html_erb__507807821__630641138'
+  app/views/comments/index.html.erb:13:in `each'
+  app/views/comments/index.html.erb:13:in `_app_views_comments_index_html_erb__507807821__630641138'
+  app/controllers/comments_controller.rb:9:in `index'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:14:38 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionController::RoutingError (No route matches {:action=>"edit", :controller=>"comments", :post_id=>#<Post id: 1, title: "Hello World", content: "Hello World,\r\nThis is my first blog :-)", created_at: "2013-11-29 04:17:15", updated_at: "2013-11-29 04:17:15">}):
+  app/views/comments/index.html.erb:19:in `block in _app_views_comments_index_html_erb__507807821__622004388'
+  app/views/comments/index.html.erb:13:in `each'
+  app/views/comments/index.html.erb:13:in `_app_views_comments_index_html_erb__507807821__622004388'
+  app/controllers/comments_controller.rb:9:in `index'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:14:44 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionController::RoutingError (No route matches {:action=>"edit", :controller=>"comments", :post_id=>#<Post id: 1, title: "Hello World", content: "Hello World,\r\nThis is my first blog :-)", created_at: "2013-11-29 04:17:15", updated_at: "2013-11-29 04:17:15">}):
+  app/views/comments/index.html.erb:19:in `block in _app_views_comments_index_html_erb__507807821__622004388'
+  app/views/comments/index.html.erb:13:in `each'
+  app/views/comments/index.html.erb:13:in `_app_views_comments_index_html_erb__507807821__622004388'
+  app/controllers/comments_controller.rb:9:in `index'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:15:18 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionController::RoutingError (No route matches {:action=>"edit", :controller=>"comments", :post_id=>#<Post id: 1, title: "Hello World", content: "Hello World,\r\nThis is my first blog :-)", created_at: "2013-11-29 04:17:15", updated_at: "2013-11-29 04:17:15">}):
+  app/views/comments/index.html.erb:19:in `block in _app_views_comments_index_html_erb__507807821__622004388'
+  app/views/comments/index.html.erb:13:in `each'
+  app/views/comments/index.html.erb:13:in `_app_views_comments_index_html_erb__507807821__622004388'
+  app/controllers/comments_controller.rb:9:in `index'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:15:19 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionController::RoutingError (No route matches {:action=>"edit", :controller=>"comments", :post_id=>#<Post id: 1, title: "Hello World", content: "Hello World,\r\nThis is my first blog :-)", created_at: "2013-11-29 04:17:15", updated_at: "2013-11-29 04:17:15">}):
+  app/views/comments/index.html.erb:19:in `block in _app_views_comments_index_html_erb__507807821__622004388'
+  app/views/comments/index.html.erb:13:in `each'
+  app/views/comments/index.html.erb:13:in `_app_views_comments_index_html_erb__507807821__622004388'
+  app/controllers/comments_controller.rb:9:in `index'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:15:19 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionController::RoutingError (No route matches {:action=>"edit", :controller=>"comments", :post_id=>#<Post id: 1, title: "Hello World", content: "Hello World,\r\nThis is my first blog :-)", created_at: "2013-11-29 04:17:15", updated_at: "2013-11-29 04:17:15">}):
+  app/views/comments/index.html.erb:19:in `block in _app_views_comments_index_html_erb__507807821__622004388'
+  app/views/comments/index.html.erb:13:in `each'
+  app/views/comments/index.html.erb:13:in `_app_views_comments_index_html_erb__507807821__622004388'
+  app/controllers/comments_controller.rb:9:in `index'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:15:19 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionController::RoutingError (No route matches {:action=>"edit", :controller=>"comments", :post_id=>#<Post id: 1, title: "Hello World", content: "Hello World,\r\nThis is my first blog :-)", created_at: "2013-11-29 04:17:15", updated_at: "2013-11-29 04:17:15">}):
+  app/views/comments/index.html.erb:19:in `block in _app_views_comments_index_html_erb__507807821__622004388'
+  app/views/comments/index.html.erb:13:in `each'
+  app/views/comments/index.html.erb:13:in `_app_views_comments_index_html_erb__507807821__622004388'
+  app/controllers/comments_controller.rb:9:in `index'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:15:20 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionController::RoutingError (No route matches {:action=>"edit", :controller=>"comments", :post_id=>#<Post id: 1, title: "Hello World", content: "Hello World,\r\nThis is my first blog :-)", created_at: "2013-11-29 04:17:15", updated_at: "2013-11-29 04:17:15">}):
+  app/views/comments/index.html.erb:19:in `block in _app_views_comments_index_html_erb__507807821__622004388'
+  app/views/comments/index.html.erb:13:in `each'
+  app/views/comments/index.html.erb:13:in `_app_views_comments_index_html_erb__507807821__622004388'
+  app/controllers/comments_controller.rb:9:in `index'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:15:34 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (25.9ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `comment_path' for #<#<Class:0xa899068>:0xb3716638>):
+    17:     <td><%= comment.post_id %></td>
+    18:     <td><%= link_to 'Show', post_comment_path(@post, comment) %></td>
+    19:     <td><%= link_to 'Edit', edit_post_comment_path(@post, comment) %></td>
+    20:     <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    21:   </tr>
+    22: <% end %>
+    23: </table>
+  app/views/comments/index.html.erb:20:in `block in _app_views_comments_index_html_erb__507807821__642208148'
+  app/views/comments/index.html.erb:13:in `each'
+  app/views/comments/index.html.erb:13:in `_app_views_comments_index_html_erb__507807821__642208148'
+  app/controllers/comments_controller.rb:9:in `index'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:16:13 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments` 
+  Rendered comments/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 10:16:13 +0530
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:16:13 +0530
+Served asset /comments.css - 200 OK (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 10:16:13 +0530
+Served asset /posts.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 10:16:13 +0530
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 10:16:13 +0530
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 10:16:13 +0530
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:16:13 +0530
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 10:16:13 +0530
+Served asset /posts.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 10:16:13 +0530
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/posts/1/comments/1" for 127.0.0.1 at 2013-11-29 10:17:50 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"post_id"=>"1", "id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.7ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`id` = 1 LIMIT 1
+  Rendered comments/show.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `edit_comment_path' for #<#<Class:0xa899068>:0xb5f64d9c>):
+    16: </p>
+    17: 
+    18: 
+    19: <%= link_to 'Edit', edit_comment_path(@comment) %> |
+    20: <%= link_to 'Back', comments_path %>
+  app/views/comments/show.html.erb:19:in `_app_views_comments_show_html_erb__499534721__621076068'
+  app/controllers/comments_controller.rb:20:in `show'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.4ms)
+
+
+Started GET "/posts/1/comments/2" for 127.0.0.1 at 2013-11-29 10:17:56 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"post_id"=>"1", "id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.6ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`id` = 2 LIMIT 1
+  Rendered comments/show.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `edit_comment_path' for #<#<Class:0xa899068>:0xb5b32b98>):
+    16: </p>
+    17: 
+    18: 
+    19: <%= link_to 'Edit', edit_comment_path(@comment) %> |
+    20: <%= link_to 'Back', comments_path %>
+  app/views/comments/show.html.erb:19:in `_app_views_comments_show_html_erb__499534721__621076068'
+  app/controllers/comments_controller.rb:20:in `show'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started GET "/posts/1/comments/3" for 127.0.0.1 at 2013-11-29 10:17:59 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"post_id"=>"1", "id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`id` = 3 LIMIT 1
+  Rendered comments/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `edit_comment_path' for #<#<Class:0xa899068>:0xb36ae420>):
+    16: </p>
+    17: 
+    18: 
+    19: <%= link_to 'Edit', edit_comment_path(@comment) %> |
+    20: <%= link_to 'Back', comments_path %>
+  app/views/comments/show.html.erb:19:in `_app_views_comments_show_html_erb__499534721__621076068'
+  app/controllers/comments_controller.rb:20:in `show'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.4ms)
+
+
+Started GET "/posts/1/comments/new" for 127.0.0.1 at 2013-11-29 10:18:29 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  Rendered comments/_form.html.erb (7.1ms)
+  Rendered comments/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 23ms (Views: 16.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:18:29 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:18:29 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/1/comments" for 127.0.0.1 at 2013-11-29 10:19:05 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT `comments`.* FROM `comments` [0m
+  Rendered comments/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2013-11-29 10:19:07 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:19:07 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:19:07 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/1/comments/new" for 127.0.0.1 at 2013-11-29 10:19:10 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  Rendered comments/_form.html.erb (1.9ms)
+  Rendered comments/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:19:10 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:19:10 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-11-29 10:19:13 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` 
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:19:13 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:19:13 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-11-29 10:19:16 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.3ms)
+  Rendered posts/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:19:16 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:19:16 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-11-29 10:19:25 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SWBIAJ4uKQZubM1fKifDQsYVKV1oD1ZQH4VSuFBCHm8=", "post"=>{"title"=>"blog 2", "content"=>"hi"}, "commit"=>"Create Post"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `posts` (`content`, `created_at`, `title`, `updated_at`) VALUES ('hi', '2013-11-29 04:49:25', 'blog 2', '2013-11-29 04:49:25')
+  [1m[36m (130.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 138ms (ActiveRecord: 131.5ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2013-11-29 10:19:25 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:19:25 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:19:25 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/2/comments/new" for 127.0.0.1 at 2013-11-29 10:19:27 +0530
+Processing by CommentsController#new as HTML
+  Parameters: {"post_id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  Rendered comments/_form.html.erb (18.9ms)
+  Rendered comments/new.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 31ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:19:27 +0530
+Served asset /comments.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:19:27 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/2/comments" for 127.0.0.1 at 2013-11-29 10:19:48 +0530
+Processing by CommentsController#index as HTML
+  Parameters: {"post_id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT `comments`.* FROM `comments` [0m
+  Rendered comments/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:19:48 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:19:48 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2013-11-29 10:19:52 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:19:52 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:19:52 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2013-11-29 10:24:37 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.0ms)
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 7.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 10:24:37 +0530
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 10:24:37 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 10:24:37 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 10:24:37 +0530
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:24:37 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 10:24:37 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:24:37 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 10:24:37 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 10:24:37 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2013-11-29 10:24:39 +0530
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SWBIAJ4uKQZubM1fKifDQsYVKV1oD1ZQH4VSuFBCHm8=", "post"=>{"title"=>"", "content"=>""}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (11.9ms)[0m  SELECT 1 AS one FROM `posts` WHERE `posts`.`title` = BINARY '' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  Rendered posts/_form.html.erb (12.1ms)
+  Rendered posts/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 65ms (Views: 22.0ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 10:24:39 +0530
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:24:39 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 10:24:39 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 10:24:39 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 10:24:39 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 10:24:39 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:24:39 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 10:24:39 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 10:24:39 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-11-29 10:25:31 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts` 
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2013-11-29 10:25:40 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  Rendered posts/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 10:25:40 +0530
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 10:25:40 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:25:40 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 10:25:40 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 10:25:40 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 10:25:40 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:25:40 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 10:25:40 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 10:25:40 +0530
+Served asset /application.js - 304 Not Modified (20ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2013-11-29 10:28:35 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT `posts`.* FROM `posts` 
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 8.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 10:28:35 +0530
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 10:28:35 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 10:28:35 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:28:35 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 10:28:35 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 10:28:35 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:28:35 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 10:28:35 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 10:28:35 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/posts/1/recent_comments" for 127.0.0.1 at 2013-11-29 10:28:38 +0530
+Processing by PostsController#recent_comments as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.5ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1
+Completed 500 Internal Server Error in 14ms
+
+ActionView::MissingTemplate (Missing template posts/recent_comments, application/recent_comments with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/home/acer/my_projects/blog/app/views"
+):
+  actionpack (3.2.12) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.12) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.12) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.12) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.12) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.12) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.12) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.12) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.12) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.12) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.12) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.12) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/acer/.rvm/rubies/ruby-1.9.3-rc1/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.12) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.12) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.12) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.12) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.12) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.12) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.12) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:414:in `_run__964107874__process_action__91475359__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.12) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.12) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.12) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.12) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.12) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.12) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.12) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.12) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.12) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.12) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.12) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.12) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.12) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.12) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.12) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `_run__1024967455__call__747122402__callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.12) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.12) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/acer/.rvm/rubies/ruby-1.9.3-rc1/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/acer/.rvm/rubies/ruby-1.9.3-rc1/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/acer/.rvm/rubies/ruby-1.9.3-rc1/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/acer/.rvm/gems/ruby-1.9.3-rc1@rails3.2.6/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/posts/1/recent_comments" for 127.0.0.1 at 2013-11-29 10:29:21 +0530
+Processing by PostsController#recent_comments as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1
+  Rendered posts/recent_comments.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 10:29:21 +0530
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 10:29:21 +0530
+Served asset /scaffolds.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 10:29:21 +0530
+Served asset /posts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:29:21 +0530
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 10:29:21 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 10:29:21 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:29:21 +0530
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 10:29:21 +0530
+Served asset /posts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 10:29:21 +0530
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/posts/1/recent_comments" for 127.0.0.1 at 2013-11-29 10:32:13 +0530
+Processing by PostsController#recent_comments as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1
+  Rendered posts/recent_comments.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 14ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-29 10:32:13 +0530
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-11-29 10:32:13 +0530
+Served asset /comments.css - 200 OK (0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2013-11-29 10:32:13 +0530
+Served asset /posts.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-29 10:32:13 +0530
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-11-29 10:32:13 +0530
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-29 10:32:13 +0530
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-11-29 10:32:13 +0530
+Served asset /comments.js - 200 OK (0ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2013-11-29 10:32:13 +0530
+Served asset /posts.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-29 10:32:13 +0530
+Served asset /application.js - 200 OK (3ms)
